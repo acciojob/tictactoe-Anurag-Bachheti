@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const player1 = document.getElementById("player-1");
-  const player2 = document.getElementById("player-2");
+  const player1 = document.getElementById("player1");
+  const player2 = document.getElementById("player2");
   const submitBtn = document.getElementById("submit");
   const grid = document.getElementById("grid");
   const messageDiv = document.getElementById("message");
