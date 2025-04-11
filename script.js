@@ -1,5 +1,6 @@
-let player1 = document.getElementById("player-1");
-let player2 = document.getElementById("player-2");
+document.addEventListener("DOMContentLoaded", () => {
+let player1 = document.getElementById("player1");
+let player2 = document.getElementById("player2");
 let grid = document.getElementById("grid");
 let submit = document.getElementById("submit");
 let message = document.getElementById("message");
@@ -104,3 +105,4 @@ function isDraw() {
     const cells = grid.getElementsByTagName("td");
     return [...cells].every(cell => cell.textContent !== "");
 }
+})
