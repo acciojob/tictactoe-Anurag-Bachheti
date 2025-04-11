@@ -1,47 +1,47 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <h1>TIC TAC TOE</h1>
+  <div class="container">
+    <!-- Initial Input Form -->
     <form class="first">
-
-        <label for="player1">Player 1</label>
-        <input id="player1" type="text" placeholder="enter name" required>
-        <br>
-        <label for="player2">Player 2</label>
-        <input id="player2" placeholder="enter name" required>
-        <br>
-        <button id="submit" type="submit"> Start Game </button>
+      <label for="player-1">Player 1</label>
+      <input id="player-1" type="text" placeholder="Enter name" required>
+      <br>
+      <label for="player-2">Player 2</label>
+      <input id="player-2" type="text" placeholder="Enter name" required>
+      <br>
+      <button id="submit" type="submit">Start Game</button>
     </form>
 
-    <h1>TIC TAC TOE</h1>
-    <div id="message"></div>
-
-    <table id="grid" class="grid">
-        <tbody>
-            <tr>
-                <td id="1" class="table"></td>
-                <td id="2" class="table"></td>
-                <td id="3" class="table"></td>
-            </tr>
-            <tr>
-                <td id="4" class="table"></td>
-                <td id="5" class="table"></td>
-                <td id="6" class="table"></td>
-            </tr>
-            <tr>
-                <td id="7" class="table"></td>
-                <td id="8" class="table"></td>
-                <td id="9" class="table"></td>
-            </tr>
-        </tbody>
-    </table>
-    <script src="script.js"></script>
-
+    <!-- Game Section (hidden initially) -->
+    <div id="game-section" style="display:none;">
+      <h1>Tic Tac Toe</h1>
+      <div class="message" id="message"></div>
+      <table id="grid" class="grid">
+        <tr>
+          <td id="1" class="cell"></td>
+          <td id="2" class="cell"></td>
+          <td id="3" class="cell"></td>
+        </tr>
+        <tr>
+          <td id="4" class="cell"></td>
+          <td id="5" class="cell"></td>
+          <td id="6" class="cell"></td>
+        </tr>
+        <tr>
+          <td id="7" class="cell"></td>
+          <td id="8" class="cell"></td>
+          <td id="9" class="cell"></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
